@@ -7,26 +7,58 @@ Este documento define la estructura, conceptos y estrategia operativa para el "A
 Para operar eficientemente con Antigravity, distinguimos tres componentes clave que definen cómo el agente interactúa con el entorno.
 
 ### 1.1 Skills (Habilidades)
+
+> 📚 **Documentación oficial:** [Skills en Antigravity](https://antigravity.google/docs/skills)
+
 *   **Definición:** Extensiones modulares que otorgan capacidades técnicas específicas al agente. Son las "herramientas" en la caja de herramientas del agente.
+*   **Activación:** El agente las activa automáticamente cuando su motor de razonamiento identifica que son relevantes para el objetivo del usuario (patrón de "divulgación progresiva").
 *   **Función:** Ejecutar lógica compleja, interactuar con APIs/DBs, automatizar tareas repetitivas y gestionar archivos con precisión.
 *   **Estructura:**
-    *   `SKILL.md` (Obligatorio): Metadatos YAML y manual de instrucciones.
-    *   `scripts/` (Opcional): Código ejecutable (Python, Bash, Node).
+    *   `SKILL.md` (Obligatorio): Metadatos YAML (nombre, descripción) y manual de instrucciones en Markdown.
+    *   `scripts/` (Opcional): Código ejecutable (Python, Bash, Node) que actúa como "caja negra".
+    *   `examples/` (Opcional): Implementaciones de referencia y patrones de uso.
     *   `resources/` (Opcional): Plantillas y archivos de configuración.
 *   **Ubicación:** `.agent/skills/` (Nivel Workspace).
+*   **Mejores prácticas:**
+    *   Mantener cada skill enfocado en una capacidad específica.
+    *   Escribir descripciones claras para que el agente sepa cuándo activarlas.
+    *   Usar scripts como cajas negras con interfaces bien definidas.
 
 ### 1.2 Rules (Reglas)
+
+> 📚 **Documentación oficial:** [Rules en Antigravity](https://antigravity.google/docs/rules)
+
 *   **Definición:** Directrices de comportamiento y restricciones. Son la "personalidad" y el "código de conducta" del agente.
-*   **Función:** Asegurar consistencia, estilo y seguridad en todas las operaciones.
+*   **Activación:** Pasiva - siempre activas o activadas por tipo de archivo. Se inyectan en el prompt del sistema.
+*   **Función:** Asegurar consistencia, estilo y seguridad en todas las operaciones. Actúan como "guardarraíles" que restringen el **CÓMO** se realiza cada tarea.
 *   **Tipos:**
-    *   **Globales:** Preferencias de usuario universales (idioma, concisión).
-    *   **Workspace:** Estándares específicos del proyecto (stack tecnológico, formatos de fecha).
+    *   **Globales:** Preferencias de usuario universales (idioma, concisión, estilo de código).
+    *   **Workspace:** Estándares específicos del proyecto (stack tecnológico, formatos de fecha, convenciones de nombres).
 *   **Ubicación:** Configuración Global o `.agent/rules/`.
+*   **Ejemplos de uso:**
+    *   "Siempre usar TypeScript en modo estricto"
+    *   "Nunca hacer commit de secretos"
+    *   "Usar formato de fecha ISO 8601"
 
 ### 1.3 Workflows (Flujos de Trabajo)
+
+> 📚 **Documentación oficial:** [Workflows en Antigravity](https://antigravity.google/docs/workflows)
+
 *   **Definición:** Algoritmos procedurales paso a paso. Son las "recetas" que guían procesos complejos.
-*   **Función:** Orquestar tareas secuenciales que pueden involucrar múltiples Skills y validaciones humanas.
-*   **Ubicación:** `.agent/workflows/`.
+*   **Activación:** Activa - invocados explícitamente por el usuario (ej. `/test`, `/deploy`, `/review`).
+*   **Función:** Orquestar tareas secuenciales que pueden involucrar múltiples Skills y validaciones humanas. Actúan como "macros" en un entorno agéntico.
+*   **Ubicación:** `.agent/workflows/` (archivos `.md` con YAML frontmatter).
+*   **Características:**
+    *   Formato: YAML frontmatter + Markdown con pasos secuenciales.
+    *   Pueden incluir anotaciones especiales:
+        *   `// turbo`: Auto-ejecuta un paso específico que involucra `run_command`.
+        *   `// turbo-all`: Auto-ejecuta TODOS los pasos que involucran `run_command`.
+    *   Permiten reutilizar información para completar varias tareas.
+    *   Facilitan el "apilamiento" de skills para tareas complejas.
+*   **Casos de uso:**
+    *   Orquestación manual de procesos multi-paso.
+    *   Procedimientos estandarizados que requieren intervención humana.
+    *   Distribución de flujos de trabajo aprobados en equipos.
 
 ---
 
@@ -35,17 +67,45 @@ Para operar eficientemente con Antigravity, distinguimos tres componentes clave 
 | Característica | **RULES** (El CÓMO SOY) | **WORKFLOWS** (El QUÉ SIGO) | **SKILLS** (El QUÉ PUEDO HACER) |
 | :--- | :--- | :--- | :--- |
 | **Rol** | Manual del Empleado | Receta de Cocina | Caja de Herramientas |
-| **Activación** | Pasiva / Siempre activa | Activa / Bajo demanda | Dinámica / Contextual |
+| **Activación** | Pasiva / Siempre activa | Activa / Bajo demanda explícita | Dinámica / Contextual (agente decide) |
 | **Naturaleza** | Texto (Instrucciones) | Texto (Markdown con pasos) | Código + Instrucciones |
+| **Visibilidad** | Inyectadas en prompt del sistema | Invocadas por comando del usuario | Descubiertas por el agente según necesidad |
+| **Propósito** | Restricciones y guardarraíles | Orquestación de procesos | Capacidades técnicas específicas |
 
 **Sinergias Operativas:**
-*   Un **Workflow** orquesta el proceso.
-*   El Workflow invoca **Skills** para tareas técnicas difíciles.
-*   Las **Rules** supervisan que tanto el Workflow como los Skills se ejecuten bajo los estándares definidos.
+*   Un **Workflow** orquesta el proceso general y define la secuencia de pasos.
+*   El Workflow invoca **Skills** para tareas técnicas complejas o especializadas.
+*   Las **Rules** supervisan que tanto el Workflow como los Skills se ejecuten bajo los estándares definidos (seguridad, estilo, convenciones).
+
+**Ejemplo práctico:**
+```
+USER: /deploy-to-production
+
+[WORKFLOW] Lee el archivo .agent/workflows/deploy.md
+  ├─ Paso 1: Ejecutar tests → Invoca SKILL "run-tests"
+  ├─ Paso 2: Build de producción → Invoca SKILL "build-docker"
+  ├─ Paso 3: Deploy → Invoca SKILL "deploy-k8s"
+  └─ [RULES] supervisan todo el proceso:
+      • "Nunca deployar sin tests pasados"
+      • "Siempre usar tags semánticos en Docker"
+      • "Notificar al equipo en Slack tras deploy"
+```
 
 ### Sobre `AGENTS.md`
+
+> 📚 **Contexto:** [AGENTS.md](https://github.com/aibtcdev/agent-tools-ts) es un estándar emergente en la industria para documentar proyectos orientados a IAs.
+
 Aunque es un estándar emergente en la industria para documentar proyectos para IAs, en Antigravity se recomienda su uso principalmente como **documentación de alto nivel** o punto de entrada interoperable.
-*   **Estrategia:** Mantener un `AGENTS.md` en la raíz como "Single Source of Truth" del contexto del proyecto y usar una **Rule** nativa para forzar su lectura al inicio de las sesiones.
+
+*   **Estrategia recomendada:** 
+    *   Mantener un `AGENTS.md` en la raíz como **"Single Source of Truth"** del contexto del proyecto.
+    *   Usar una **Rule** nativa de Antigravity para forzar su lectura al inicio de las sesiones.
+    *   Incluir en `AGENTS.md`:
+        *   Descripción general del proyecto y su propósito.
+        *   Arquitectura de alto nivel.
+        *   Referencias a Skills, Workflows y Rules disponibles.
+        *   Convenciones y estándares del proyecto.
+        *   Puntos de entrada para nuevos colaboradores (humanos o agentes).
 
 ---
 
