@@ -50,15 +50,27 @@ Aceptas el contenido completo de un libro en formatos como PDF OCR, PDF nativo, 
 
 ## Estructura de Salida (Output)
 
-### Bloque de Metadatos Globales (Al inicio)
-Debe incluir:
-*   Título del libro
-*   Autor(es)
-*   Temática principal y subtemáticas
-*   Descripción corta (2-4 líneas)
-*   Tipo de libro (Divulgativo, Técnico, Ventas, etc.)
-*   Público objetivo
-*   Conceptos nucleares
+### Bloque de Metadatos Globales (Frontmatter YAML)
+El archivo DEBE comenzar con un bloque YAML riguroso con EXACTAMENTE los siguientes campos:
+
+```yaml
+---
+title: [Título del libro]
+author: [Autor(es)]
+theme: [Temas principales separados por comas]
+type: [Clasificación, ej: No ficción / Negocios / Marketing]
+audience: [Público objetivo separado por comas]
+core_concepts:
+  - [Concepto clave 1]
+  - [Concepto clave 2]
+  - [Concepto clave 3]
+  - [Concepto clave 4]
+  - [Concepto clave 5]
+description: >
+  [Descripción densa y resumida del libro en 2-4 líneas, 
+  manteniendo la identación para multilínea]
+---
+```
 
 ### Formato Final
 *   Un único archivo Markdown (.md) que une todos los capítulos en orden.
