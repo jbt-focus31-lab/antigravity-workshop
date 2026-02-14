@@ -1,0 +1,241 @@
+Carpetas
+	00 📥 INBOX 
+	10 🏥 SALUD 
+		00 🗂️ Admin 
+			Seguridad Social
+			Seguros médicos privados
+			Procedimientos y contactos
+			Plantillas y modelos
+			Autorizaciones globales
+		10 🏥 Pepe 
+			Médicos
+				Informes Médicos
+				Analíticas y pruebas
+				Tratamientos y Medicación
+				Citas
+				Consentimientos informados
+				Procesos Administrativos y Legales
+				Seguros y Volantes
+			Ejercicio
+				Planes y Rutinas
+				Diario
+				Métricas y Seguimiento
+				Material y Técnica
+			Alimentación
+			Bienestar y Prevención
+				Vacunas
+				Chequeos y revisiones
+				Programas preventivos
+		20 🏥 Myriam 
+			(estructura análoga)
+		30 🏥 Carla 
+			(estructura análoga)
+	20 💸 DINERO 
+		00 🏠 Hogar
+			Vivienda
+				Documentación
+				Impuestos
+				Mantenimiento
+				Suministros
+					Agua
+					Luz
+					Gas
+					Internet
+					Otros Servicios
+			Vehículo
+				2012 Toyota Verso
+					Documentación
+					Impuestos
+					Mantenimiento
+				Varios
+			Seguros
+				Hogar
+					Pólizas
+					Siniestros
+				Vehículo
+					2012 Toyota Verso
+						Pólizas
+						Siniestros
+				Vida
+					Pólizas
+					Siniestros
+			Inventario, garantías y manuales
+				Electrodomésticos
+					Factura y garantía
+					Manual
+					Mantenimiento y averías
+				Electrónica de consumo
+					Factura y garantía
+					Manual
+					Mantenimiento y averías
+				Informática y móviles
+					Factura y garantía
+					Manual
+					Mantenimiento y averías
+				Otros
+					Factura y garantía
+					Manual
+					Mantenimiento y averías
+		10 💼 Trabajo por cuenta ajena
+			Capgemini
+				Nóminas
+				Contratos y anexos
+				Evaluaciones y feedback
+				Beneficios sociales
+				Formación corporativa
+		20 📊 Actividad profesional
+			Procedimientos
+			Bitácoras
+			Facturas 
+				Emitidas
+				Recibidas
+			Hacienda 
+				Modelo 036
+				Modelos 303-390 IVA
+				Resultados Actividad Económica 
+			Proyectos 
+			Gastos 
+				Proveedores
+		30 🏦 Bancos y brókeres
+			(Webs)
+				Bancos y tarjetas
+					Banco Santander
+					Banco Sabadell
+					ING Direct
+					Revolut
+				Brókeres
+					Renta 4
+					MyInvestor
+					Trade Republic
+					Interactive Brokers
+				Criptomonedas
+					Kraken
+					Binance
+				Inmobiliario
+					Hausera
+					Urbanitae
+			IBANs
+			Tarjetas
+		40 📈 Inversiones y cartera
+			Carteras y seguimiento
+				Acciones y dividendos
+				Forex
+				Criptomonedas
+			Análisis de inversiones
+				Análisis fundamental y técnico
+				Watchlists
+			Información financiera
+				Investing
+		  50 🧾 Seguridad Social y cotizaciones
+			Vida laboral 
+			Bases de cotización 
+			Certificados de situación laboral 
+			Comunicaciones TGSS 
+			Autónomos (RETA)
+	30 👨‍👩‍👧 RELACIONES 
+		00 👪 Familia Núcleo 
+			10 🧔🏻‍♂️ Pepe
+				Documentación personal
+			20 👩🏻 Myriam 
+				Documentación personal
+			30 👧🏻 Carla 
+				Documentación personal
+		10 👴 Familia Extendida 
+			Papá PBS
+			Tía Mer
+			Tío Paco Borrás
+		20 🎉 Eventos Familiares 
+			2024-05-22 Tríptico Bodas Oro Paco y Encarna
+			2025-01-18 Foto Encarnita y Nietos
+		30 🌍 Ocio y Viajes 
+			Reyes y Papá Noel
+			Vacaciones
+				2023 WB Studio Tour HP Londres
+				2025 Verano
+		40 🤝 Amigos
+		90 📜 Historia Familiar 
+			ADN
+			Árboles Genealógicos
+	40 🌱 DESARROLLO PERSONAL 
+		00 📚 Formación 
+			10 📚 Pepe
+				🎓 Educación formal
+				Cursos presenciales
+				Cursos online
+				Membresías
+				Lecturas formativas
+				Certificaciones y diplomas
+			20 📚 Myriam
+				(estructura análoga)
+			30 📚 Carla
+				(estructura análoga)
+		10 ✍️ Escritura y creatividad literaria
+			Proyectos literarios
+				Cuentos
+				Microrrelatos
+				Blogs
+				Ideas
+				Premios
+		20 🎨 Dibujo y arte visual
+			Sketches y bocetos
+			Referencias visuales
+			Proyectos personales
+		30 🧩 Tecnología y experimentación
+			IA y automatizaciones
+			Apps y prototipos personales
+			n8n y flujos de prueba
+			Scripts o herramientas propias
+		40 📸 Multimedia
+			Edición de vídeo
+			Fotografía
+			Podcasting y sonido
+			Pruebas multimedia
+		50 📖 Lecturas y biblioteca personal 
+			Lecturas personales (resúmenes, fichas de lectura)
+			Calibre (enlace externo a biblioteca portable)
+			Notas de colecciones y lecturas en curso
+		60 🎭 Asociaciones y Cultura
+			Valencianismo
+				Rat Penat
+				Acció Cultural
+			Otras asociaciones
+			Colaboraciones o soporte técnico-cultural
+			Eventos culturales o conferencias
+		70 🕊️ Espiritualidad
+			Documentos de referencia
+			Participación en actividades
+			Textos personales y diarios espirituales
+		80 🔄 Hábitos y Rutinas
+			Pepe
+			Myriam
+			Carla
+	50 🚀 PROYECTOS
+		00 📅 En curso 
+		10 🗃️ Finalizados (para archivar en su pilar natural)
+		20 📋 Plantillas y recursos de gestión 
+			Plantilla de seguimiento de proyectos
+			Modelos de actas / entregables
+	90 🖥️ SISTEMA
+		10 🏗️ Infraestructura digital
+			OneDrive (configuración, estructura de carpetas principal, sincronización, notas sobre cuotas o planes)
+			Google Drive (estructura de cuentas y carpetas, backups en la nube, accesos compartidos)
+			n8n
+			Cloudflare (registros DNS, túneles configurados, políticas de seguridad, certificados SSL)
+			MiniPC servidor (configuración de hardware, instalación del sistema operativo, servicios instalados, mantenimiento y logs)
+			Inventario técnico (IT)
+				Red doméstica
+					Topología y planos
+					Equipos de red (router, switches, APs)
+					Direccionamiento (IPs/DHCP)
+				Servidores y mini-PCs (NAS, n8n, Home Assistant…)
+					Fichas técnicas (HW, SO, servicios, puertos)
+					Backups y jobs
+					Actualizaciones y firmware
+				End-user (portátiles/móviles/tablets)
+					Fichas técnicas (modelo, SN, cifrado, SO/versión)
+					Mantenimiento
+				Licencias y software (listados, renovaciones)
+		20 📝 Plantillas y Convenciones
+			Convenciones de clasificación
+			Nomenclatura
+			Plantillas de documentos
