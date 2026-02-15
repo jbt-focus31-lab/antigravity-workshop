@@ -1,3 +1,4 @@
+﻿# UTF-8 with BOM
 <#
 .SYNOPSIS
 Migra carpetas desde la estructura actual a VIDA DIGITAL
@@ -6,31 +7,32 @@ Migra carpetas desde la estructura actual a VIDA DIGITAL
 Este script mueve carpetas y archivos desde la estructura actual del usuario a la nueva estructura VIDA DIGITAL.
 Incluye modo simulación (-Simular) para revisar antes de mover.
 
-IMPORTANTE: Este script contiene una tabla de mapeo de EJEMPLO. El usuario debe personalizarla según su estructura actual.
+IMPORTANTE: Este script contiene mapeos basados en la estructura detectada. Revisar antes de ejecutar.
 
 .PARAMETER RutaOrigen
-Ruta raíz de la estructura actual (ej. D:\OneDrive\Documentos)
+Ruta raíz de la estructura actual (ej. C:\Users\Pepe\OneDrive\Documentos)
 
 .PARAMETER RutaDestino
-Ruta raíz de VIDA DIGITAL (ej. D:\OneDrive\VIDA DIGITAL)
+Ruta raíz de VIDA DIGITAL (ej. C:\Users\Pepe\OneDrive\Documentos\VIDA DIGITAL)
 
 .PARAMETER Simular
 Si está presente, muestra qué se movería sin mover realmente
 
 .EXAMPLE
-.\migrar_carpetas.ps1 -RutaOrigen "D:\OneDrive\Documentos" -RutaDestino "D:\OneDrive\VIDA DIGITAL" -Simular
+.\migrar_carpetas.ps1 -RutaOrigen "C:\Users\Pepe\OneDrive\Documentos" -RutaDestino "C:\Users\Pepe\OneDrive\Documentos\VIDA DIGITAL" -Simular
 
 .EXAMPLE
-.\migrar_carpetas.ps1 -RutaOrigen "D:\OneDrive\Documentos" -RutaDestino "D:\OneDrive\VIDA DIGITAL"
+.\migrar_carpetas.ps1 -RutaOrigen "C:\Users\Pepe\OneDrive\Documentos" -RutaDestino "C:\Users\Pepe\OneDrive\Documentos\VIDA DIGITAL"
 
 .NOTES
 Generado por: Antigravity
-Fecha: 2026-02-12
-Versión: 1.0
+Fecha: 2026-02-14
+Versión: 2.0 (UTF-8 with BOM + Emojis)
 
-ADVERTENCIA: Revisa la tabla de mapeo antes de ejecutar. Este script es un EJEMPLO.
+ADVERTENCIA: Revisa los mapeos antes de ejecutar.
 #>
 
+[CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)]
     [string]$RutaOrigen,
@@ -40,6 +42,9 @@ param(
     
     [switch]$Simular
 )
+
+# Asegurar que la consola use UTF-8
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Función para mover carpeta/archivo (o simular)
 function Move-Item-Safe {
@@ -57,23 +62,43 @@ function Move-Item-Safe {
         return
     }
     
-    # Crear carpeta destino si no existe
-    $destinationParent = Split-Path $fullDestination -Parent
-    if (-not (Test-Path $destinationParent)) {
+    # Determinar si el destino debe ser una carpeta o un archivo
+    $isSourceDirectory = Test-Path $fullSource -PathType Container
+    
+    # Si el origen es una carpeta, el destino también debe serlo
+    if ($isSourceDirectory) {
+        $destinationPath = $fullDestination
+    }
+    else {
+        # Si el origen es un archivo, el destino es la carpeta padre
+        $destinationPath = Split-Path $fullDestination -Parent
+    }
+    
+    # Crear toda la ruta de carpetas de destino si no existe
+    if (-not (Test-Path $destinationPath)) {
         if ($Simular) {
-            Write-Host "[SIMULACIÓN] Crearía carpeta: $destinationParent" -ForegroundColor Yellow
+            Write-Host "[SIMULACIÓN] Crearía carpeta: $destinationPath" -ForegroundColor Yellow
         }
         else {
-            New-Item -ItemType Directory -Path $destinationParent -Force | Out-Null
+            New-Item -ItemType Directory -Path $destinationPath -Force | Out-Null
         }
     }
     
     if ($Simular) {
-        Write-Host "[SIMULACIÓN] Movería:" -ForegroundColor Yellow
-        Write-Host "  Origen:  $fullSource" -ForegroundColor White
-        Write-Host "  Destino: $fullDestination" -ForegroundColor White
-        Write-Host "  Razón:   $Reason" -ForegroundColor Cyan
-        Write-Host ""
+        if (Test-Path $fullDestination) {
+            Write-Host "[SIMULACIÓN] Ya existe en destino:" -ForegroundColor Gray
+            Write-Host "  Origen:  $fullSource" -ForegroundColor White
+            Write-Host "  Destino: $fullDestination" -ForegroundColor White
+            Write-Host "  Razón:   $Reason" -ForegroundColor Cyan
+            Write-Host ""
+        }
+        else {
+            Write-Host "[SIMULACIÓN] Movería:" -ForegroundColor Yellow
+            Write-Host "  Origen:  $fullSource" -ForegroundColor White
+            Write-Host "  Destino: $fullDestination" -ForegroundColor White
+            Write-Host "  Razón:   $Reason" -ForegroundColor Cyan
+            Write-Host ""
+        }
     }
     else {
         try {
@@ -104,43 +129,92 @@ if ($Simular) {
 Write-Host "Origen:  $RutaOrigen" -ForegroundColor White
 Write-Host "Destino: $RutaDestino`n" -ForegroundColor White
 
-# --- TABLA DE MAPEO (EJEMPLO - PERSONALIZAR) ---
+# --- TABLA DE MAPEO ---
 
-# SALUD
-Move-Item-Safe -Source "Salud\Informes Pepe" -Destination "10 SALUD\10 Personas\Pepe\01 Informes" -Reason "Informes médicos de Pepe"
-Move-Item-Safe -Source "Salud\Informes Myriam" -Destination "10 SALUD\10 Personas\Myriam\01 Informes" -Reason "Informes médicos de Myriam"
-Move-Item-Safe -Source "Salud\Informes Carla" -Destination "10 SALUD\10 Personas\Carla\01 Informes" -Reason "Informes médicos de Carla"
-Move-Item-Safe -Source "Salud\Seguros" -Destination "10 SALUD\00 Admin\Seguros Médicos" -Reason "Seguros médicos familiares"
+# === 10 🏥 SALUD ===
+Move-Item-Safe -Source "Salut" -Destination "10 🏥 SALUD" -Reason "Carpeta completa de Salud (contiene subcarpetas por persona)"
 
-# DINERO
-Move-Item-Safe -Source "Finanzas\Facturas Emitidas" -Destination "20 DINERO\10 Actividad Profesional\10 Facturas\Emitidas" -Reason "Facturas emitidas de actividad profesional"
-Move-Item-Safe -Source "Finanzas\Facturas Recibidas" -Destination "20 DINERO\10 Actividad Profesional\10 Facturas\Recibidas" -Reason "Facturas recibidas de proveedores"
-Move-Item-Safe -Source "Finanzas\Hacienda" -Destination "20 DINERO\10 Actividad Profesional\20 Hacienda" -Reason "Documentación fiscal"
-Move-Item-Safe -Source "Casa\Suministros" -Destination "20 DINERO\00 Admin\Hogar\Suministros" -Reason "Facturas de suministros del hogar"
-Move-Item-Safe -Source "Casa\Vehículo" -Destination "20 DINERO\00 Admin\Hogar\Vehículo" -Reason "Documentación del vehículo"
-Move-Item-Safe -Source "Casa\Garantías" -Destination "20 DINERO\00 Admin\Hogar\Inventario, garantías y manuales" -Reason "Garantías y manuales de electrodomésticos"
+# === 20 💸 DINERO ===
 
-# RELACIONES
-Move-Item-Safe -Source "Familia\Carla\Colegio" -Destination "30 RELACIONES\00 Familia Núcleo\Carla" -Reason "Documentación escolar de Carla"
-Move-Item-Safe -Source "Familia\Viajes" -Destination "30 RELACIONES\30 Ocio y Viajes\Vacaciones" -Reason "Documentación de viajes familiares"
-Move-Item-Safe -Source "Familia\Eventos" -Destination "30 RELACIONES\40 Eventos Familiares" -Reason "Eventos familiares"
-Move-Item-Safe -Source "Familia\ADN" -Destination "30 RELACIONES\10 Historia Familiar\ADN" -Reason "Resultados de ADN y genealogía"
+# Administración Pública - DNIs y Pasaportes
+Move-Item-Safe -Source "Administració Pública\DNIs\Pepe" -Destination "30 👨‍👩‍👧 RELACIONES\00 👪 Familia Núcleo\10 🧔🏻‍♂️ Pepe\Documentación personal\DNI" -Reason "DNI de Pepe → Documentación personal"
+Move-Item-Safe -Source "Administració Pública\DNIs\Myriam" -Destination "30 👨‍👩‍👧 RELACIONES\00 👪 Familia Núcleo\20 👩🏻 Myriam\Documentación personal\DNI" -Reason "DNI de Myriam → Documentación personal"
+Move-Item-Safe -Source "Administració Pública\DNIs\Carla" -Destination "30 👨‍👩‍👧 RELACIONES\00 👪 Familia Núcleo\30 👧🏻 Carla\Documentación personal\DNI" -Reason "DNI de Carla → Documentación personal"
+Move-Item-Safe -Source "Administració Pública\Passaports - Pasaportes" -Destination "30 👨‍👩‍👧 RELACIONES\00 👪 Familia Núcleo\Pasaportes" -Reason "Pasaportes familiares → Documentación personal"
+Move-Item-Safe -Source "Administració Pública\Certificado nacimiento" -Destination "30 👨‍👩‍👧 RELACIONES\00 👪 Familia Núcleo\Certificados" -Reason "Certificados de nacimiento → Documentación personal"
 
-# DESARROLLO PERSONAL
-Move-Item-Safe -Source "Formación\Cursos Pepe" -Destination "40 DESARROLLO PERSONAL\00 Formación\10 Pepe\Cursos online" -Reason "Cursos online de Pepe"
-Move-Item-Safe -Source "Formación\Certificados Pepe" -Destination "40 DESARROLLO PERSONAL\00 Formación\10 Pepe\Certificaciones y diplomas" -Reason "Certificados de Pepe"
-Move-Item-Safe -Source "Escritura\Cuentos" -Destination "40 DESARROLLO PERSONAL\10 Creatividad y Escritura\Proyectos literarios\Cuentos" -Reason "Cuentos escritos"
-Move-Item-Safe -Source "Escritura\Microrrelatos" -Destination "40 DESARROLLO PERSONAL\10 Creatividad y Escritura\Proyectos literarios\Microrrelatos" -Reason "Microrrelatos"
-Move-Item-Safe -Source "Valencianismo\Lo Rat Penat" -Destination "40 DESARROLLO PERSONAL\60 Asociaciones y Cultura\Valencianismo\Rat Penat" -Reason "Documentación de Lo Rat Penat"
+# Impuestos Municipales (carpetas con años)
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2019" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2019" -Reason "Impuestos municipales 2019"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2020" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2020" -Reason "Impuestos municipales 2020"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2021" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2021" -Reason "Impuestos municipales 2021"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2022" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2022" -Reason "Impuestos municipales 2022"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2023" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2023" -Reason "Impuestos municipales 2023"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2024" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2024" -Reason "Impuestos municipales 2024"
+Move-Item-Safe -Source "Administració Pública\Imposts Municipals\2025" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Impuestos\2025" -Reason "Impuestos municipales 2025"
 
-# PROYECTOS (activos)
-Move-Item-Safe -Source "Proyectos\2025 Novela Premio Hortensia Roig" -Destination "50 PROYECTOS\00 En curso\2025 Novela Premio Hortensia Roig" -Reason "Proyecto activo de escritura"
+# Pis Manises
+Move-Item-Safe -Source "Pis Manises" -Destination "20 💸 DINERO\00 🏠 Hogar\Vivienda\Documentación" -Reason "Documentación de vivienda"
 
-# SISTEMA
-Move-Item-Safe -Source "Documentación\DNI y Pasaporte" -Destination "90 SISTEMA\10 Identidad y Legal\DNI y Pasaporte" -Reason "Documentos de identidad"
-Move-Item-Safe -Source "Tecnología\Dominios" -Destination "90 SISTEMA\20 Dominios y Correo" -Reason "Configuración de dominios"
-Move-Item-Safe -Source "Tecnología\n8n" -Destination "90 SISTEMA\30 Infra y Automatización\n8n" -Reason "Workflows de n8n"
-Move-Item-Safe -Source "Tecnología\Scripts" -Destination "40 DESARROLLO PERSONAL\30 Tecnología y experimentación\Scripts o herramientas propias" -Reason "Scripts personales"
+# Facturas y garantías
+Move-Item-Safe -Source "Factures (garantia)" -Destination "20 💸 DINERO\00 🏠 Hogar\Inventario, garantías y manuales" -Reason "Facturas y garantías de electrodomésticos"
+Move-Item-Safe -Source "Manuals" -Destination "20 💸 DINERO\00 🏠 Hogar\Inventario, garantías y manuales" -Reason "Manuales de electrodomésticos"
+
+# Multas
+Move-Item-Safe -Source "Multes" -Destination "20 💸 DINERO\00 🏠 Hogar\Varios" -Reason "Multas y sanciones"
+
+# Finanzas y Negocios
+Move-Item-Safe -Source "Finances i Negocis" -Destination "20 💸 DINERO" -Reason "Carpeta completa de finanzas (revisar contenido y redistribuir)"
+
+# Capgemini
+Move-Item-Safe -Source "Capgemini" -Destination "20 💸 DINERO\10 💼 Trabajo por cuenta ajena\Capgemini" -Reason "Documentación laboral de Capgemini"
+
+# === 30 👨‍👩‍👧 RELACIONES ===
+
+# Familia
+Move-Item-Safe -Source "Família" -Destination "30 👨‍👩‍👧 RELACIONES" -Reason "Carpeta completa de familia (revisar contenido y redistribuir)"
+
+# Amigos
+Move-Item-Safe -Source "Amics" -Destination "30 👨‍👩‍👧 RELACIONES\40 🤝 Amigos" -Reason "Documentación de amigos"
+
+# Ocio, cultura, viajes
+Move-Item-Safe -Source "Oci, cultura, viages" -Destination "30 👨‍👩‍👧 RELACIONES\30 🌍 Ocio y Viajes" -Reason "Ocio y viajes familiares"
+
+# === 40 🌱 DESARROLLO PERSONAL ===
+
+# Formación
+Move-Item-Safe -Source "Formació" -Destination "40 🌱 DESARROLLO PERSONAL\00 📚 Formación" -Reason "Carpeta completa de formación (revisar contenido y redistribuir por persona)"
+
+# Escritura
+Move-Item-Safe -Source "Escritura" -Destination "40 🌱 DESARROLLO PERSONAL\10 ✍️ Escritura y creatividad literaria" -Reason "Carpeta completa de escritura"
+
+# Espiritualidad
+Move-Item-Safe -Source "Espiritualitat" -Destination "40 🌱 DESARROLLO PERSONAL\70 🕊️ Espiritualidad" -Reason "Carpeta completa de espiritualidad"
+Move-Item-Safe -Source "Brúixola" -Destination "40 🌱 DESARROLLO PERSONAL\70 🕊️ Espiritualidad\Brúixola" -Reason "Contenido de Brúixola (espiritualidad)"
+
+# Lectura
+Move-Item-Safe -Source "Llectura" -Destination "40 🌱 DESARROLLO PERSONAL\50 📖 Lecturas y biblioteca personal\Notas de colecciones y lecturas en curso" -Reason "Notas de lectura"
+Move-Item-Safe -Source "Calibre Portable\Calibre Library" -Destination "40 🌱 DESARROLLO PERSONAL\50 📖 Lecturas y biblioteca personal\Lecturas personales\Calibre Library" -Reason "Biblioteca de Calibre"
+
+# Tecnología
+Move-Item-Safe -Source "Tecnologia" -Destination "40 🌱 DESARROLLO PERSONAL\30 🧩 Tecnología y experimentación" -Reason "Carpeta completa de tecnología"
+Move-Item-Safe -Source "Productivitat" -Destination "40 🌱 DESARROLLO PERSONAL\30 🧩 Tecnología y experimentación\Productividad" -Reason "Herramientas de productividad"
+
+# Valencianismo
+Move-Item-Safe -Source "Valencianisme" -Destination "40 🌱 DESARROLLO PERSONAL\60 🎭 Asociaciones y Cultura\Valencianismo" -Reason "Carpeta completa de valencianismo"
+
+# Hobbys y Proyectos
+Move-Item-Safe -Source "Hobbys - Proyectes" -Destination "40 🌱 DESARROLLO PERSONAL" -Reason "Hobbys (revisar contenido y redistribuir según tipo)"
+
+# Política
+Move-Item-Safe -Source "Política" -Destination "40 🌱 DESARROLLO PERSONAL\60 🎭 Asociaciones y Cultura\Política" -Reason "Contenido político-cultural"
+
+# === 50 🚀 PROYECTOS ===
+# (Los proyectos activos se mueven manualmente según el caso)
+
+# === 90 🖥️ SISTEMA ===
+
+# Digital Brain
+Move-Item-Safe -Source "Digital Brain" -Destination "90 🖥️ SISTEMA\20 📝 Plantillas y Convenciones" -Reason "Sistema de organización digital"
 
 # Resumen
 Write-Host "`n========================================" -ForegroundColor Cyan
@@ -156,4 +230,8 @@ else {
     Write-Host "Revisa las carpetas destino para confirmar que todo está correcto.`n" -ForegroundColor White
 }
 
-Write-Host "IMPORTANTE: Este script es un EJEMPLO. Personaliza la tabla de mapeo según tu estructura actual.`n" -ForegroundColor Yellow
+Write-Host "IMPORTANTE: Algunas carpetas requieren revisión manual y redistribución:" -ForegroundColor Yellow
+Write-Host "  - Finances i Negocis (redistribuir según subcarpetas)" -ForegroundColor Yellow
+Write-Host "  - Família (redistribuir según subcarpetas)" -ForegroundColor Yellow
+Write-Host "  - Formació (redistribuir por persona)" -ForegroundColor Yellow
+Write-Host "  - Hobbys - Proyectes (redistribuir según tipo de hobby)`n" -ForegroundColor Yellow
