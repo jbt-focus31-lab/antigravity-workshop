@@ -1,0 +1,21 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:32
++ ... NG="utf-8"; python -c "from 
+Lab.projects.Samsung_Notes.poc.samsung_no ...
++                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (m 
+   ost recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 1, in <module>
+    from Lab.projects.Samsung_Notes.poc.samsung_notes_conv
+erter.converter import convert_batch; 
+convert_batch('Lab/projects/Samsung Notes/samples/docx', 
+'Lab/projects/Samsung Notes/poc/output_demo_final', 
+bg='transparent', generate_pdf=True, searchable_pdf=True, 
+images_mode='flat', per_document_folder=False)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 
+'Lab.projects.Samsung_Notes'

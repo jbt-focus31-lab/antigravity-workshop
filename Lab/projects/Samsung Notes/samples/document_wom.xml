@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:document xmlns:ns0="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:ns1="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:ns2="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:ns3="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:ns4="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:ns5="urn:schemas-microsoft-com:vml">
+  <ns0:body>
+    <ns0:p>
+      <ns0:pPr>
+        <ns0:pageBreakBefore ns0:val="true" />
+        <ns0:spacing ns0:line="240" ns0:lineRule="auto" ns0:after="0" ns0:before="0" />
+        <ns0:ind ns0:right="0" ns0:left="0" />
+      </ns0:pPr>
+      <ns0:r>
+        <ns0:drawing>
+          <ns1:anchor simplePos="0" relativeHeight="0" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <ns1:simplePos x="0" y="0" />
+            <ns1:positionH relativeFrom="column">
+              <ns1:posOffset>-240030</ns1:posOffset>
+            </ns1:positionH>
+            <ns1:positionV relativeFrom="paragraph">
+              <ns1:posOffset>0</ns1:posOffset>
+            </ns1:positionV>
+            <ns1:extent cx="7560945" cy="10687050" />
+            <ns1:effectExtent l="0" t="0" r="0" b="0" />
+            <ns1:wrapNone />
+            <ns1:docPr id="1" name="Drawing 0" descr="image1771597348045.png" />
+            <ns1:cNvGraphicFramePr />
+            <ns2:graphic>
+              <ns2:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <ns3:pic>
+                  <ns3:nvPicPr>
+                    <ns3:cNvPr id="2" name="Picture 2" descr="image1771597348045.png" />
+                    <ns3:cNvPicPr>
+                      <ns2:picLocks noChangeAspect="true" />
+                    </ns3:cNvPicPr>
+                  </ns3:nvPicPr>
+                  <ns3:blipFill>
+                    <ns2:blip ns4:embed="rId2" />
+                    <ns2:stretch>
+                      <ns2:fillRect />
+                    </ns2:stretch>
+                  </ns3:blipFill>
+                  <ns3:spPr>
+                    <ns2:xfrm>
+                      <ns2:off x="0" y="0" />
+                      <ns2:ext cx="16802100" cy="23749000" />
+                    </ns2:xfrm>
+                    <ns2:prstGeom prst="rect">
+                      <ns2:avLst />
+                    </ns2:prstGeom>
+                  </ns3:spPr>
+                </ns3:pic>
+              </ns2:graphicData>
+            </ns2:graphic>
+          </ns1:anchor>
+        </ns0:drawing>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:20.092226028442383pt;width:595.35pt;height:79.90433349609376pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>CONSUM</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- Presupuesto ok</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:76.65200958251953pt;width:595.35pt;height:150.1055419921875pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- PRPS pendientes de firma</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- Hoja WIP REFACT (1)- Marga</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- 0TS → 5: P MTO (2)- Dani</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:132.04714965820312pt;width:595.35pt;height:184.77173309326173pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>* COSTA (2)- Marga</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- lo que tardemos, consumimos+ del budget</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:207.50134735107423pt;width:595.35pt;height:256.7310424804688pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>- EQUIPO</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>Dani es ruído por parada de análisis</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:256.3312225341797pt;width:595.35pt;height:277.52008666992185pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>o roído por NIDO</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:310.0533782958984pt;width:595.35pt;height:358.83440551757815pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>* COSTA → Equipo ganador</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>a contar a Fernando → pre- comité</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:368.5254730224609pt;width:595.35pt;height:446.36745300292966pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>CIPS ACCIÓN: Equipo prepara el lunes y</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="9AD2C9" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>yo reviso el martes</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>IA Sentido práctico</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:469.44838256835936pt;width:595.35pt;height:549.4516479492188pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>ROL</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>Gonzalo → COMPLEX ENGAGEMENTS</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>Paso Antequera .Eramos</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:543.121875pt;width:595.35pt;height:611.4956176757812pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>meri → En</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>-* ..</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:631.2082763671875pt;width:595.35pt;height:679.8013549804688pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>EM EN EM</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="9AD2C9" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>ACCIÓN Meri no</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:679.5525146484375pt;width:595.35pt;height:766.4339904785156pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="9AD2C9" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>@Meritxell Gonzalo</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="9AD2C9" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>contodo (EMS cachas)</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>↳ Radiografía de EMI</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+        <ns0:pict>
+          <ns5:shape path="m 1,1 l 1,1000, 1000,1000, 1000,1 x e" style="position:absolute;margin-left:-18.9pt;margin-top:766.6975524902343pt;width:595.35pt;height:821.6235900878906pt;z-index:-1;visibility:visible;rotation:0.0;" stroked="false" filled="false">
+            <ns5:textbox style="mso-fit-shape-to-text:true">
+              <ns0:txbxContent>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>a Mercé li beria?</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+                <ns0:p>
+                  <ns0:pPr>
+                    <ns0:spacing ns0:line="192" ns0:lineRule="auto" />
+                  </ns0:pPr>
+                  <ns0:r>
+                    <ns0:rPr>
+                      <ns0:rFonts ns0:ascii="Calibri" ns0:hAnsi="Calibri" ns0:cs="Calibri" ns0:eastAsia="Calibri" />
+                      <ns0:color ns0:val="123644" />
+                      <ns0:sz ns0:val="40" />
+                    </ns0:rPr>
+                    <ns0:t>↳ Rufino</ns0:t>
+                  </ns0:r>
+                </ns0:p>
+              </ns0:txbxContent>
+            </ns5:textbox>
+          </ns5:shape>
+        </ns0:pict>
+      </ns0:r>
+    </ns0:p>
+    <ns0:p>
+      <ns0:pPr>
+        <ns0:pageBreakBefore ns0:val="true" />
+        <ns0:spacing ns0:line="240" ns0:lineRule="auto" ns0:after="0" ns0:before="0" />
+        <ns0:ind ns0:right="0" ns0:left="0" />
+      </ns0:pPr>
+      <ns0:r>
+        <ns0:drawing>
+          <ns1:anchor simplePos="0" relativeHeight="0" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <ns1:simplePos x="0" y="0" />
+            <ns1:positionH relativeFrom="column">
+              <ns1:posOffset>-240030</ns1:posOffset>
+            </ns1:positionH>
+            <ns1:positionV relativeFrom="paragraph">
+              <ns1:posOffset>0</ns1:posOffset>
+            </ns1:positionV>
+            <ns1:extent cx="7560945" cy="10687050" />
+            <ns1:effectExtent l="0" t="0" r="0" b="0" />
+            <ns1:wrapNone />
+            <ns1:docPr id="1" name="Drawing 0" descr="image1771597348145.png" />
+            <ns1:cNvGraphicFramePr />
+            <ns2:graphic>
+              <ns2:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <ns3:pic>
+                  <ns3:nvPicPr>
+                    <ns3:cNvPr id="3" name="Picture 3" descr="image1771597348145.png" />
+                    <ns3:cNvPicPr>
+                      <ns2:picLocks noChangeAspect="true" />
+                    </ns3:cNvPicPr>
+                  </ns3:nvPicPr>
+                  <ns3:blipFill>
+                    <ns2:blip ns4:embed="rId3" />
+                    <ns2:stretch>
+                      <ns2:fillRect />
+                    </ns2:stretch>
+                  </ns3:blipFill>
+                  <ns3:spPr>
+                    <ns2:xfrm>
+                      <ns2:off x="0" y="0" />
+                      <ns2:ext cx="16802100" cy="23749000" />
+                    </ns2:xfrm>
+                    <ns2:prstGeom prst="rect">
+                      <ns2:avLst />
+                    </ns2:prstGeom>
+                  </ns3:spPr>
+                </ns3:pic>
+              </ns2:graphicData>
+            </ns2:graphic>
+          </ns1:anchor>
+        </ns0:drawing>
+        <ns0:drawing>
+          <ns1:anchor simplePos="0" relativeHeight="0" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1">
+            <ns1:simplePos x="0" y="0" />
+            <ns1:positionH relativeFrom="column">
+              <ns1:posOffset>-240030</ns1:posOffset>
+            </ns1:positionH>
+            <ns1:positionV relativeFrom="paragraph">
+              <ns1:posOffset>0</ns1:posOffset>
+            </ns1:positionV>
+            <ns1:extent cx="7560945" cy="10687050" />
+            <ns1:effectExtent l="0" t="0" r="0" b="0" />
+            <ns1:wrapNone />
+            <ns1:docPr id="1" name="Drawing 0" descr="image1771597348152.png" />
+            <ns1:cNvGraphicFramePr />
+            <ns2:graphic>
+              <ns2:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <ns3:pic>
+                  <ns3:nvPicPr>
+                    <ns3:cNvPr id="4" name="Picture 4" descr="image1771597348152.png" />
+                    <ns3:cNvPicPr>
+                      <ns2:picLocks noChangeAspect="true" />
+                    </ns3:cNvPicPr>
+                  </ns3:nvPicPr>
+                  <ns3:blipFill>
+                    <ns2:blip ns4:embed="rId4" />
+                    <ns2:stretch>
+                      <ns2:fillRect />
+                    </ns2:stretch>
+                  </ns3:blipFill>
+                  <ns3:spPr>
+                    <ns2:xfrm>
+                      <ns2:off x="0" y="0" />
+                      <ns2:ext cx="16802100" cy="23749000" />
+                    </ns2:xfrm>
+                    <ns2:prstGeom prst="rect">
+                      <ns2:avLst />
+                    </ns2:prstGeom>
+                  </ns3:spPr>
+                </ns3:pic>
+              </ns2:graphicData>
+            </ns2:graphic>
+          </ns1:anchor>
+        </ns0:drawing>
+      </ns0:r>
+    </ns0:p>
+    <ns0:sectPr>
+      <ns0:pgSz ns0:h="16840" ns0:w="11900" />
+      <ns0:pgMar>
+        <ns0:pgMar ns0:top="0" ns0:right="375" ns0:bottom="270" ns0:left="375" ns0:header="720" ns0:footer="720" ns0:gutter="0" />
+      </ns0:pgMar>
+    </ns0:sectPr>
+  </ns0:body>
+</ns0:document>

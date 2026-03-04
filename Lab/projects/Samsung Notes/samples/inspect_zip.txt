@@ -1,0 +1,99 @@
+
+=== 20260218 Kick-off CCA_260218_173855.docx ===
+         848  [Content_Types].xml
+         588  _rels/.rels
+         183  docProps/app.xml
+         433  docProps/core.xml
+        4692  word/_rels/document.xml.rels
+      169278  word/document.xml
+      425043  word/media/image10.png
+       16835  word/media/image11.png
+       16835  word/media/image12.png
+      457702  word/media/image13.png
+       16835  word/media/image14.png
+       16835  word/media/image15.png
+      433427  word/media/image16.png
+       16835  word/media/image17.png
+       16835  word/media/image18.png
+      453852  word/media/image19.png
+       16835  word/media/image2.png
+       16835  word/media/image20.png
+       16835  word/media/image21.png
+      480768  word/media/image22.png
+       16835  word/media/image23.png
+       16835  word/media/image24.png
+      356936  word/media/image25.png
+       16835  word/media/image26.png
+       16835  word/media/image27.png
+      433908  word/media/image28.png
+       16835  word/media/image29.png
+       16835  word/media/image3.png
+       16835  word/media/image30.png
+      431667  word/media/image31.png
+       16835  word/media/image32.png
+       16835  word/media/image33.png
+      286256  word/media/image34.png
+      456151  word/media/image4.png
+       16835  word/media/image5.png
+       16835  word/media/image6.png
+      461660  word/media/image7.png
+       16835  word/media/image8.png
+       16835  word/media/image9.png
+         123  word/settings.xml
+
+=== 20260220 DH CORREOS Conversación Ángel_260220_120704.docx ===
+         848  [Content_Types].xml
+         588  _rels/.rels
+         183  docProps/app.xml
+         433  docProps/core.xml
+        1078  word/_rels/document.xml.rels
+       26568  word/document.xml
+       16835  word/media/image2.png
+       16835  word/media/image3.png
+      346270  word/media/image4.png
+       16835  word/media/image5.png
+       16835  word/media/image6.png
+      185041  word/media/image7.png
+         123  word/settings.xml
+
+=== 20260220 DH CORREOS Ángel, Javi y David_260220_142051.docx ===
+         848  [Content_Types].xml
+         588  _rels/.rels
+         183  docProps/app.xml
+         433  docProps/core.xml
+        1078  word/_rels/document.xml.rels
+       23636  word/document.xml
+       16835  word/media/image2.png
+       16835  word/media/image3.png
+      214956  word/media/image4.png
+       16835  word/media/image5.png
+       16835  word/media/image6.png
+      218072  word/media/image7.png
+         123  word/settings.xml
+
+=== 20260220 DH SANLUCAR EMR_260220_110543.docx ===
+         848  [Content_Types].xml
+         588  _rels/.rels
+         183  docProps/app.xml
+         433  docProps/core.xml
+        1078  word/_rels/document.xml.rels
+       20971  word/document.xml
+       16835  word/media/image2.png
+       16835  word/media/image3.png
+      337637  word/media/image4.png
+       16835  word/media/image5.png
+       16835  word/media/image6.png
+      103886  word/media/image7.png
+         123  word/settings.xml
+
+=== 20260220 WOM GONZALO_260220_150512.docx ===
+         848  [Content_Types].xml
+         588  _rels/.rels
+         183  docProps/app.xml
+         433  docProps/core.xml
+         682  word/_rels/document.xml.rels
+       15746  word/document.xml
+       16835  word/media/image2.png
+       16835  word/media/image3.png
+      345708  word/media/image4.png
+         123  word/settings.xml

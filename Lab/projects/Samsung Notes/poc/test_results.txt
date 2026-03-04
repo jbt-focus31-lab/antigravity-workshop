@@ -1,0 +1,158 @@
+﻿
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+PASO 1 ΓÇö Validaci├│n de estructura ZIP de los 5 ficheros
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Γ£à PASS  Se encontraron 5 ficheros DOCX de muestra
+         Encontrados: 5 en C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\samples\docx
+
+  [fichero] 20260218 Kick-off CCA_260218_173855.docx
+  Γ£à PASS    Contiene word/document.xml
+  Γ£à PASS    Contiene word/_rels/document.xml.rels
+  Γ£à PASS    Tiene im├ígenes en word/media/ (33 ficheros)
+  Γ£à PASS    Distingue im├ígenes grandes (contenido): 11 ΓëÑ50KB
+         Grandes: ['image16.png', 'image28.png', 'image10.png']...
+  Γ£à PASS    Distingue im├ígenes peque├▒as (decorativas): 22 <50KB
+
+  [fichero] 20260220 DH CORREOS Conversaci├│n ├üngel_260220_120704.docx
+  Γ£à PASS    Contiene word/document.xml
+  Γ£à PASS    Contiene word/_rels/document.xml.rels
+  Γ£à PASS    Tiene im├ígenes en word/media/ (6 ficheros)
+  Γ£à PASS    Distingue im├ígenes grandes (contenido): 2 ΓëÑ50KB
+         Grandes: ['image4.png', 'image7.png']...
+  Γ£à PASS    Distingue im├ígenes peque├▒as (decorativas): 4 <50KB
+
+  [fichero] 20260220 DH CORREOS ├üngel, Javi y David_260220_142051.docx
+  Γ£à PASS    Contiene word/document.xml
+  Γ£à PASS    Contiene word/_rels/document.xml.rels
+  Γ£à PASS    Tiene im├ígenes en word/media/ (6 ficheros)
+  Γ£à PASS    Distingue im├ígenes grandes (contenido): 2 ΓëÑ50KB
+         Grandes: ['image4.png', 'image7.png']...
+  Γ£à PASS    Distingue im├ígenes peque├▒as (decorativas): 4 <50KB
+
+  [fichero] 20260220 DH SANLUCAR EMR_260220_110543.docx
+  Γ£à PASS    Contiene word/document.xml
+  Γ£à PASS    Contiene word/_rels/document.xml.rels
+  Γ£à PASS    Tiene im├ígenes en word/media/ (6 ficheros)
+  Γ£à PASS    Distingue im├ígenes grandes (contenido): 2 ΓëÑ50KB
+         Grandes: ['image4.png', 'image7.png']...
+  Γ£à PASS    Distingue im├ígenes peque├▒as (decorativas): 4 <50KB
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  Γ£à PASS    Contiene word/document.xml
+  Γ£à PASS    Contiene word/_rels/document.xml.rels
+  Γ£à PASS    Tiene im├ígenes en word/media/ (3 ficheros)
+  Γ£à PASS    Distingue im├ígenes grandes (contenido): 1 ΓëÑ50KB
+         Grandes: ['image4.png']...
+  Γ£à PASS    Distingue im├ígenes peque├▒as (decorativas): 2 <50KB
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+PASO 2a ΓÇö Extracci├│n de texto de las cajas (txbxContent)
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+  [fichero] 20260218 Kick-off CCA_260218_173855.docx
+  Γ£à PASS    Extrae bloques de texto (total: 132 bloques, 7184 chars)
+         Muestra: "- Agradecimiento de Pablo por el arranque sin ├⌐l | - Necesitar├í tiempo para ponerse al d├¡a | - Pero ante..."
+
+  [fichero] 20260220 DH CORREOS Conversaci├│n ├üngel_260220_120704.docx
+  Γ£à PASS    Extrae bloques de texto (total: 20 bloques, 850 chars)
+         Muestra: "Necesita | - Menos burocracia..."
+
+  [fichero] 20260220 DH CORREOS ├üngel, Javi y David_260220_142051.docx
+  Γ£à PASS    Extrae bloques de texto (total: 18 bloques, 505 chars)
+         Muestra: "AEAT Hito: 14/12 | AEAT no llegaba entrar | 6-4..."
+
+  [fichero] 20260220 DH SANLUCAR EMR_260220_110543.docx
+  Γ£à PASS    Extrae bloques de texto (total: 14 bloques, 482 chars)
+         Muestra: "Asistentes: DIH Pepe | Jes├║s | Toni..."
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  Γ£à PASS    Extrae bloques de texto (total: 12 bloques, 542 chars)
+         Muestra: "CONSUM | - Presupuesto ok..."
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+PASO 2b ΓÇö Extracci├│n de relaciones imagen ΓåÆ rId
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+  [fichero] 20260218 Kick-off CCA_260218_173855.docx
+  Γ£à PASS    Mapea rIds de im├ígenes de contenido (11 encontrados)
+         rIds: ['rId10', 'rId13', 'rId16', 'rId19', 'rId22', 'rId25', 'rId28', 'rId31', 'rId34', 'rId4', 'rId7']
+
+  [fichero] 20260220 DH CORREOS Conversaci├│n ├üngel_260220_120704.docx
+  Γ£à PASS    Mapea rIds de im├ígenes de contenido (2 encontrados)
+         rIds: ['rId4', 'rId7']
+
+  [fichero] 20260220 DH CORREOS ├üngel, Javi y David_260220_142051.docx
+  Γ£à PASS    Mapea rIds de im├ígenes de contenido (2 encontrados)
+         rIds: ['rId4', 'rId7']
+
+  [fichero] 20260220 DH SANLUCAR EMR_260220_110543.docx
+  Γ£à PASS    Mapea rIds de im├ígenes de contenido (2 encontrados)
+         rIds: ['rId4', 'rId7']
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  Γ£à PASS    Mapea rIds de im├ígenes de contenido (1 encontrados)
+         rIds: ['rId4']
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+PASO 2c ΓÇö Conversi├│n completa: primer fichero (validaci├│n detallada)
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+  [fichero de prueba] 20260220 WOM GONZALO_260220_150512.docx
+  Γ£à PASS    Fichero .md generado
+         Ruta: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\poc\output\test_single\20260220 WOM GONZALO_260220_150512.md
+  Γ£à PASS    Frontmatter YAML presente (comienza con ---)
+  Γ£à PASS    Frontmatter incluye 'title:'
+  Γ£à PASS    Frontmatter incluye 'date:'
+  Γ£à PASS    Frontmatter incluye 'tags:'
+  Γ£à PASS    Contiene secciones de p├ígina (## P├ígina)
+  Γ£à PASS    Contiene referencias a im├ígenes (![[images/...]])
+  Γ£à PASS    Contiene texto OCR extra├¡do (no vac├¡o)
+  Γ£à PASS    Im├ígenes extra├¡das al directorio /images/ (1 ficheros)
+
+  [Primeras 30 l├¡neas del Markdown generado]
+    ---
+    title: "20260220 WOM GONZALO_260220_150512"
+    date: 2026-03-03
+    tags: [meeting, poc-test]
+    entity_type: meeting
+    source: samsung_notes
+    ---
+    
+    # 20260220 WOM GONZALO_260220_150512
+    
+    ## P├ígina 1
+    
+    CONSUM
+    - Presupuesto ok
+    
+    - PRPS pendientes de firma
+    - Hoja WIP REFACT (1)- Marga
+    - 0TS ΓåÆ 5: P MTO (2)- Dani
+    
+    * COSTA (2)- Marga
+    - lo que tardemos, consumimos+ del budget
+    
+    - EQUIPO
+    Dani es ru├¡do por parada de an├ílisis
+    
+    o ro├¡do por NIDO
+    
+    * COSTA ΓåÆ Equipo ganador
+    a contar a Fernando ΓåÆ pre- comit├⌐
+    
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+PASO 2d ΓÇö Conversi├│n de los 5 ficheros de muestra
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Γ£à PASS    20260218 Kick-off CCA_260218_173855.docx           ΓåÆ 22 p├ígs, 8311 chars, 11 imgs
+  Γ£à PASS    20260220 DH CORREOS Conversaci├│n ├üngel_260220_1207 ΓåÆ 4 p├ígs, 1225 chars, 2 imgs
+  Γ£à PASS    20260220 DH CORREOS ├üngel, Javi y David_260220_142 ΓåÆ 4 p├ígs, 878 chars, 2 imgs
+  Γ£à PASS    20260220 DH SANLUCAR EMR_260220_110543.docx        ΓåÆ 4 p├ígs, 817 chars, 2 imgs
+  Γ£à PASS    20260220 WOM GONZALO_260220_150512.docx            ΓåÆ 2 p├ígs, 805 chars, 1 imgs
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+RESUMEN: 50/50 checks pasados
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+≡ƒÄë PoC completada con ├⌐xito. El conversor funciona correctamente.
+   Ficheros Markdown generados en: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\poc\output
