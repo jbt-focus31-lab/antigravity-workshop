@@ -1,6 +1,6 @@
 ---
 title: "20260220 DH CORREOS Conversación Ángel_260220_120704"
-date: 2026-03-04
+date: 2026-03-06
 tags: [meeting, handwritten]
 entity_type: meeting
 source: samsung_notes
@@ -68,8 +68,6 @@ Is servicio muchos horas, sábados
 
 ## Página 2
 
-![[20260220 DH CORREOS Conversación Ángel_260220_120704_p1.png]]
-
 ---
 
 ## Página 3
@@ -107,7 +105,5 @@ llegar?
 ---
 
 ## Página 4
-
-![[20260220 DH CORREOS Conversación Ángel_260220_120704_p2.png]]
 
 ---

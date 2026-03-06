@@ -7,7 +7,8 @@ Cubre:
   - Bloque 7: images_mode variantes (flat, images_named)
   - Bloque 8: per_document_folder=False
   - Bloque 9: Batch conversion (5 ficheros, flat, PDF buscable)
-  - Bloque 10: Regresión: conversión completa de los 5 ficheros
+  - Bloque 10: link_images y export_images
+  - Bloque 11: Regresión: conversión completa de los 5 ficheros
 
 Ejecutar:
   $env:PYTHONIOENCODING="utf-8"
@@ -314,10 +315,35 @@ check("Batch: PNGs en carpeta raiz (flat)",
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# BLOQUE 10 — Conversion completa de los 5 ficheros (regresion + PDF)
+# BLOQUE 10 — link_images y export_images
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "="*60)
-print("BLOQUE 10 — Conversion completa (regresion + opciones)")
+print("BLOQUE 10 — link_images y export_images")
+print("="*60)
+
+# export=False implicitly via link=False
+out10 = OUTPUT_DIR / "no_links"
+md10 = convert_docx_to_markdown(SMALL_DOCX, out10, link_images=False, searchable_pdf=True, generate_pdf=True)
+check("link_images=False: MD no contiene referencias de imagenes",
+      "![[" not in md10.read_text(encoding="utf-8"))
+check("export_images=None (hereda False): no se generan PNGs",
+      len(list(out10.glob("**/*.png"))) == 0)
+check("generate_pdf funciona aun sin exportar imagenes",
+      len(list(out10.glob("**/*.pdf"))) > 0)
+
+# link=False but export=True
+out10b = OUTPUT_DIR / "no_links_but_export"
+md10b = convert_docx_to_markdown(SMALL_DOCX, out10b, link_images=False, export_images=True)
+check("link=False, export=True: MD sin referencias",
+      "![[" not in md10b.read_text(encoding="utf-8"))
+check("link=False, export=True: si se generan PNGs",
+      len(list(out10b.glob("**/*.png"))) > 0)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# BLOQUE 11 — Conversion completa de los 5 ficheros (regresion + PDF)
+# ══════════════════════════════════════════════════════════════════════════════
+print("\n" + "="*60)
+print("BLOQUE 11 — Conversion completa (regresion + opciones)")
 print("="*60)
 
 out10 = OUTPUT_DIR / "all_files"

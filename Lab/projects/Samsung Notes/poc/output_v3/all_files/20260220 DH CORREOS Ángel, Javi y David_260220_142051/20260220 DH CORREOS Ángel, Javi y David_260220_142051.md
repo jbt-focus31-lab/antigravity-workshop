@@ -1,6 +1,6 @@
 ---
 title: "20260220 DH CORREOS Ángel, Javi y David_260220_142051"
-date: 2026-03-04
+date: 2026-03-06
 tags: [meeting, handwritten]
 entity_type: meeting
 source: samsung_notes

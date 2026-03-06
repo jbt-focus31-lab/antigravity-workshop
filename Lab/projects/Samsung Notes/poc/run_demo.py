@@ -9,6 +9,7 @@ convert_batch(
     bg='transparent',
     generate_pdf=True,
     searchable_pdf=True,
+    link_images=False,
     images_mode='flat',
     per_document_folder=False,
 )

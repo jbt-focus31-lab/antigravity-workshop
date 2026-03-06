@@ -34,6 +34,8 @@ Parameters for convert_docx_to_markdown():
   generate_pdf:        bool — assemble images (white bg) into a multi-page PDF
   searchable_pdf:      bool — (requires generate_pdf=True) add invisible text
                        layer at exact coordinates from the DOCX
+  link_images:         bool — if True, link handwritten pictures in Markdown
+  export_images:       bool|None — if True, save image files. Defaults to link_images.
   images_mode:         "images"       → images in output_dir/images/
                        "images_named" → images in output_dir/images_{docx_stem}/
                        "flat"         → images in output_dir/ (same as MD)
@@ -172,7 +174,7 @@ def _compose_on_background(
 
 
 def _save_variants(
-    img_bytes: bytes, base_path: Path, bg: str
+    img_bytes: bytes, base_path: Path, bg: str, save_to_disk: bool = True
 ) -> list[tuple[str, Path]]:
     """
     Save one or more background variants of an image. Returns list
@@ -187,19 +189,22 @@ def _save_variants(
 
     if bg in ("transparent", "all"):
         p = _t_path()
-        p.write_bytes(img_bytes)
+        if save_to_disk:
+            p.write_bytes(img_bytes)
         saved.append(("transparent", p))
 
     if bg in ("white", "all"):
-        img = _compose_on_background(img_bytes, (255, 255, 255))
         p = _white_path()
-        img.save(str(p))
+        if save_to_disk:
+            img = _compose_on_background(img_bytes, (255, 255, 255))
+            img.save(str(p))
         saved.append(("white", p))
 
     if bg in ("black", "all"):
-        img = _compose_on_background(img_bytes, (0, 0, 0))
         p = _black_path()
-        img.save(str(p))
+        if save_to_disk:
+            img = _compose_on_background(img_bytes, (0, 0, 0))
+            img.save(str(p))
         saved.append(("black", p))
 
     return saved
@@ -344,6 +349,8 @@ def convert_docx_to_markdown(
     bg: str = "transparent",
     generate_pdf: bool = False,
     searchable_pdf: bool = False,
+    link_images: bool = True,
+    export_images: bool | None = None,
     images_mode: str = "images",
     per_document_folder: bool = True,
 ) -> Path:
@@ -364,6 +371,8 @@ def convert_docx_to_markdown(
         generate_pdf:        If True, assemble a multi-page PDF (white bg).
         searchable_pdf:      If True (and generate_pdf=True), add invisible
                              text layer using TextMode.INVISIBLE (render mode 3).
+        link_images:         If True, link images in the generated markdown.
+        export_images:       If True, save image files. If None, inherits from link_images.
         images_mode:         Where to store image files:
                                "images"       — in output_dir/images/
                                "images_named" — in output_dir/images_{stem}/
@@ -379,6 +388,9 @@ def convert_docx_to_markdown(
         raise ValueError(f"bg must be transparent|white|black|all, got: {bg!r}")
     if images_mode not in ("images", "images_named", "flat"):
         raise ValueError(f"images_mode must be images|images_named|flat, got: {images_mode!r}")
+
+    if export_images is None:
+        export_images = link_images
 
     docx_path  = Path(docx_path)
     output_dir = Path(output_dir)
@@ -447,7 +459,7 @@ def convert_docx_to_markdown(
         base_path = images_dir / f"{base}.png"
         img_bytes = content_image_bytes[rid]
 
-        saved = _save_variants(img_bytes, base_path, bg)
+        saved = _save_variants(img_bytes, base_path, bg, save_to_disk=export_images)
 
         # Markdown reference: prefer transparent, fall back to white
         variants = {label: p for label, p in saved}
@@ -524,7 +536,7 @@ def convert_docx_to_markdown(
         md_lines.append("")
 
         rid = page["image_rid"]
-        if rid and rid in rid_to_md_ref:
+        if link_images and rid and rid in rid_to_md_ref:
             md_lines.append(f"![[{img_md_prefix}{rid_to_md_ref[rid]}]]")
             md_lines.append("")
 
