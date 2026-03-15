@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "cfbc539377088ca7e44a813b30c306327385bbd973cd7a721e1743f60837dd62"
+    },
+    "pdf-to-markdown": {
+      "source": "aliceisjustplaying/claude-resources-monorepo",
+      "sourceType": "github",
+      "computedHash": "1d0cdfc644c786cd3feeb5baa1930bb7b65ffe6bc0ed4f63d854d5894c794155"
+    }
+  }
+}
