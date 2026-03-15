@@ -1,0 +1,18 @@
+﻿python : Font MPDFAA+Arial is missing the following glyphs: 
+'Γå│' (\u21b3)
+At line:1 char:483
++ ... ts_v4.txt"; python "Lab\projects\Samsung 
+Notes\poc\run_demo.py" 2>&1  ...
++                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Font MPDFAA+Ari.. 
+   . 'Γå│' (\u21b3):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Demo batch completado.

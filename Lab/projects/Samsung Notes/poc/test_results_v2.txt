@@ -1,0 +1,165 @@
+﻿python : Font MPDFAA+Arial is missing the following 
+glyphs: 'Γå│' (\u21b3)
+At line:1 char:166
++ ... NG="utf-8"; python "Lab\projects\Samsung 
+Notes\poc\samsung_notes_conv ...
++                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Font MPDFAA 
+   +Ari... 'Γå│' (\u21b3):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+Font MPDFAA+Arial is missing the following glyphs: 'Γå│' 
+(\u21b3)
+
+============================================================
+BLOQUE 1 ΓÇö Estructura ZIP (regresion)
+============================================================
+  [OK  ] 5 ficheros DOCX de muestra encontrados
+           Dir: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\samples\docx
+
+  [fichero] 20260218 Kick-off CCA_260218_173855.docx
+  [OK  ] word/document.xml presente
+  [OK  ] word/_rels/document.xml.rels presente
+  [OK  ] Imagenes en media/ (33 total)
+  [OK  ] Imagenes grandes (contenido): 11
+
+  [fichero] 20260220 DH CORREOS Conversaci├│n ├üngel_260220_120704.docx
+  [OK  ] word/document.xml presente
+  [OK  ] word/_rels/document.xml.rels presente
+  [OK  ] Imagenes en media/ (6 total)
+  [OK  ] Imagenes grandes (contenido): 2
+
+  [fichero] 20260220 DH CORREOS ├üngel, Javi y David_260220_142051.docx
+  [OK  ] word/document.xml presente
+  [OK  ] word/_rels/document.xml.rels presente
+  [OK  ] Imagenes en media/ (6 total)
+  [OK  ] Imagenes grandes (contenido): 2
+
+  [fichero] 20260220 DH SANLUCAR EMR_260220_110543.docx
+  [OK  ] word/document.xml presente
+  [OK  ] word/_rels/document.xml.rels presente
+  [OK  ] Imagenes en media/ (6 total)
+  [OK  ] Imagenes grandes (contenido): 2
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  [OK  ] word/document.xml presente
+  [OK  ] word/_rels/document.xml.rels presente
+  [OK  ] Imagenes en media/ (3 total)
+  [OK  ] Imagenes grandes (contenido): 1
+
+============================================================
+BLOQUE 2 ΓÇö Extraccion de texto (regresion)
+============================================================
+
+  [fichero] 20260218 Kick-off CCA_260218_173855.docx
+  [OK  ] Texto extraido: 294 bloques, 7022 chars
+           Muestra: "- Agradecimiento de Pablo por el arranque sin ├⌐l"
+
+  [fichero] 20260220 DH CORREOS Conversaci├│n ├üngel_260220_120704.docx
+  [OK  ] Texto extraido: 42 bloques, 828 chars
+           Muestra: "Necesita"
+
+  [fichero] 20260220 DH CORREOS ├üngel, Javi y David_260220_142051.docx
+  [OK  ] Texto extraido: 34 bloques, 489 chars
+           Muestra: "AEAT Hito: 14/12"
+
+  [fichero] 20260220 DH SANLUCAR EMR_260220_110543.docx
+  [OK  ] Texto extraido: 29 bloques, 467 chars
+           Muestra: "Asistentes: DIH Pepe"
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  [OK  ] Texto extraido: 27 bloques, 527 chars
+           Muestra: "CONSUM"
+
+============================================================
+BLOQUE 3 ΓÇö Renombrado secuencial de imagenes
+============================================================
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  [OK  ] Imagen nombrada con stem del DOCX + _p1
+           Ficheros: ['20260220 WOM GONZALO_260220_150512_p1.png']
+  [OK  ] Nombre NO contiene 'image' (nomenclatura antigua)
+  [OK  ] Referencia en MD usa nuevo nombre
+
+============================================================
+BLOQUE 4 ΓÇö Modos de fondo (bg)
+============================================================
+
+  [bg=transparent]
+  [OK  ] Genera variante '_p1.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1.png']
+  [OK  ] NO genera variante '_p1_b.png'
+  [OK  ] NO genera variante '_p1_n.png'
+
+  [bg=white]
+  [OK  ] Genera variante '_p1_b.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1_b.png']
+  [OK  ] NO genera variante '_p1.png'
+  [OK  ] NO genera variante '_p1_n.png'
+
+  [bg=black]
+  [OK  ] Genera variante '_p1_n.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1_n.png']
+  [OK  ] NO genera variante '_p1.png'
+  [OK  ] NO genera variante '_p1_b.png'
+
+  [bg=all]
+  [OK  ] Genera variante '_p1.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1.png', '20260220 WOM GONZALO_260220_150512_p1_b.png', '20260220 WOM GONZALO_260220_150512_p1_n.png']
+  [OK  ] Genera variante '_p1_b.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1.png', '20260220 WOM GONZALO_260220_150512_p1_b.png', '20260220 WOM GONZALO_260220_150512_p1_n.png']
+  [OK  ] Genera variante '_p1_n.png'
+           Imagenes: ['20260220 WOM GONZALO_260220_150512_p1.png', '20260220 WOM GONZALO_260220_150512_p1_b.png', '20260220 WOM GONZALO_260220_150512_p1_n.png']
+  [OK  ] bg=all: MD referencia PNG transparente (sin sufijo)
+           La version transparente es la que va en el ![[...]]
+
+============================================================
+BLOQUE 5 ΓÇö Generacion de PDF (generate_pdf=True)
+============================================================
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  [OK  ] PDF generado en output_dir
+           Esperado: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\poc\output_v2\pdf_basic\20260220 WOM GONZALO_260220_150512.pdf
+  [OK  ] PDF tiene 1 pagina (1 imagen de contenido)
+           Paginas encontradas: 1
+  [OK  ] Fichero PDF tiene tamanyo > 10KB
+           Tamanyo: 167,906 bytes
+
+============================================================
+BLOQUE 6 ΓÇö PDF buscable (searchable_pdf=True)
+============================================================
+
+  [fichero] 20260220 WOM GONZALO_260220_150512.docx
+  [OK  ] PDF buscable generado
+           Esperado: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\poc\output_v2\pdf_searchable\20260220 WOM GONZALO_260220_150512.pdf
+  [OK  ] Fichero PDF buscable tiene tamanyo > 10KB
+           Tamanyo: 279,355 bytes
+  [OK  ] PDF buscable tiene texto embebido (capa de texto no vacia)
+           Chars extraidos: 549, muestra: 'CONSUM\n- Presupuesto ok\n- PRPS pendientes de firma\n- Hoja WIP REFACT (1)- Marga\n- 0TS ΓåÆ 5: P MTO (2)'
+  [OK  ] PDF buscable contiene letras de 'CONSUM'
+           Chars en PDF: ['\n', ' ', '(', ')', '*', '+', ',', '-', '.', '0', '1', '2', '5', ':', '?', '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
+  [OK  ] PDF buscable contiene letras de 'ROL'
+           Chars en PDF: ['\n', ' ', '(', ')', '*', '+', ',', '-', '.', '0', '1', '2', '5', ':', '?', '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
+
+============================================================
+BLOQUE 7 ΓÇö Conversion de los 5 ficheros (regresion + opciones)
+============================================================
+  [OK  ] 20260218 Kick-off CCA_260218_173855.docx      OK (22 pag, 33 imgs, PDF=YES)
+  [OK  ] 20260220 DH CORREOS Conversaci├│n ├üngel_260220 OK (4 pag, 6 imgs, PDF=YES)
+  [OK  ] 20260220 DH CORREOS ├üngel, Javi y David_26022 OK (4 pag, 6 imgs, PDF=YES)
+  [OK  ] 20260220 DH SANLUCAR EMR_260220_110543.docx   OK (4 pag, 6 imgs, PDF=YES)
+  [OK  ] 20260220 WOM GONZALO_260220_150512.docx       OK (2 pag, 3 imgs, PDF=YES)
+
+============================================================
+RESUMEN: 55/55 checks pasados
+============================================================
+
+PoC v2 completada con exito.
+Output en: C:\DATA\Development Projects\antigravity-workshop\Lab\projects\Samsung Notes\poc\output_v2

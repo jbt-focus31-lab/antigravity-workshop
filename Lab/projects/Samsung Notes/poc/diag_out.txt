@@ -1,0 +1,33 @@
+﻿  char='P' font=Roboto size=23.4 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='R' font=Roboto size=23.4 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='O' font=Roboto size=23.4 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='L' font=Roboto size=23.4 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='E' font=Roboto size=23.4 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+Page 1: 585 chars, 556 char objects
+  text[:100]: 'PROLENS\npor qu├⌐? ΓåÆ Tener visibilidad\nGroup lightway ΓåÆ m├ís completo\nΓå│ Proteus ΓåÆ KPIs exactos que\nnece'
+
+  char='E' font=Roboto size=23.2 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='D' font=Roboto size=23.2 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='M' font=Roboto size=23.2 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='1' font=Roboto size=19.1 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+  char='-' font=Roboto size=19.1 non_stroking_color=(0.0, 0.0, 0.0) stroking_color=(0.0, 0.0, 0.0)
+Page 2: 576 chars, 547 char objects
+  text[:100]: 'EDM\n1- TQM\n2- Supervised Staff Augmentation\n~ TEM\n3- Fixed Price (RISK)\n4- Servicios (recurrencia)\nΓå│'
+
+Total streams: 15
+
+Stream 2: 2153499 bytes (has text)
+  Text render mode: b'3' (3=invisible)
+  b'/F1 23.4449 Tf\rBT\r/G2 gs\r0 0 0 rg\r0.592848 0 0 1 72.4367 788.25 Tm\r3 Tr\r(\\0P) Tj\r1.16012 0 0 1 81.2627 788.25 Tm\r(\\0R) T'
+
+Stream 3: 1960851 bytes (has text)
+  Text render mode: b'3' (3=invisible)
+  b'/F1 23.2266 Tf\rBT\r/G2 gs\r0 0 0 rg\r0.886991 0 0 1 89.9944 792.023 Tm\r3 Tr\r(\\0E) Tj\r0.590494 0 0 1 102.314 792.023 Tm\r(\\0D'
+
+Stream 6: 2357758 bytes (has text)
+  Text render mode: b'3' (3=invisible)
+  b'/G1 gs\r0 0 0 rg\r136.759 783.188 m\r136.759 783.188 l\r136.66 783.204 l\r136.571 783.249 l\r136.5 783.32 l\r136.454 783.409 l\r'
+
+Stream 9: 1465703 bytes (has text)
+  Text render mode: b'3' (3=invisible)
+  b'/F1 22.8124 Tf\rBT\r/G2 gs\r0 0 0 rg\r1.37942 0 0 1 62.2749 794.167 Tm\r3 Tr\r(\\0F) Tj\r0.632242 0 0 1 80.7466 794.167 Tm\r(\\0O)'
